@@ -1,0 +1,46 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Necro Cult Zine Component
+
+
+Component Name: 	Button1
+Description:		
+
+
+**************************************************/
+
+.Button1{
+	position: relative;
+	display: inline-block;
+	@include paperTexture;
+	background-color: $black;
+	padding: 0.45em 0.85em;
+	font-family: $font_display;
+	font-size: $font_size_subhead;
+	color: $white;
+	//transform: rotate(1deg);
+
+	transition: $transition_medium;
+	transition-delay: -0.075s;
+	will-change: text-shadow;
+	@include solidShadowHover;
+
+	span{
+		display: inline-block;
+		//transform: rotate(-2deg);
+	}
+
+	&.skew{ 
+
+	}
+	&.skewVar1{
+		transform: rotate(-1deg);
+
+		span{
+			transform: rotate(2deg);
+		}
+	}
+}

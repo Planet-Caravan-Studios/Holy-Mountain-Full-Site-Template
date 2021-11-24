@@ -1,0 +1,19 @@
+{
+  "base_url": "https://necro-cult-zine.com",
+  "site_title": "Necro Cult Zine",
+  "site_description": "Necro Cult Zine  - True Underground Metal News",
+  "site_keywords": [
+    {
+      "keyword": "Next.js"
+    },
+    {
+      "keyword": "Netlify"
+    },
+    {
+      "keyword": "React"
+    }
+  ],
+  "posts_per_page": 5,
+  "instagram_account": "@alec_reimel",
+  "github_account": "areimel"
+}

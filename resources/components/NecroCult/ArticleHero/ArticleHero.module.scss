@@ -1,0 +1,68 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	FixedSplit
+Description:		
+
+
+**************************************************/
+
+.ArticleHero{
+	width: 100%;
+	max-width: $content_width_l;
+	margin:auto;
+	min-height: 600px;
+	position: relative;
+	overflow: hidden;
+	@include flex_center;
+
+	.imageCredit{
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		color: $white;
+		padding: 5px;
+		font-size: $font_size_detail;
+	}
+	
+
+	.Content{
+		width: 100%;
+		max-width: $content_width_m;
+		margin:auto;
+		position: relative;
+		z-index: 11;
+		@include flex_center;
+
+		.heading{
+			text-align: center;
+		}
+
+		.columnName{
+			color: $white;
+			font-size: $font_size_subhead;
+			font-family: $font_alt;
+			background-color: $black;
+			display: inline-block;
+			padding:5px 25px;
+			transform: rotate(-2deg);
+			margin-bottom: 15px;
+			position: relative;
+		}
+
+		.title{
+			color: $white;
+			text-align: center;
+			font-size: 150px;
+			font-family: $font_display;
+			position: relative;
+			line-height: 0.8;
+		}
+		
+	}
+}
