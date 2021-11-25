@@ -49,12 +49,12 @@ GENERAL
 
 	/***** Selection Pseudo *****/
 		::selection {
-			background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
-			mix-blend-mode: multiply;
+			//background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
+			//mix-blend-mode: multiply;
 		}
 		::-moz-selection {
-			background: rgba(251,51,51,.85); /* Gecko Browsers */
-			mix-blend-mode: multiply;
+			//background: rgba(251,51,51,.85); /* Gecko Browsers */
+			//mix-blend-mode: multiply;
 		}
 
 

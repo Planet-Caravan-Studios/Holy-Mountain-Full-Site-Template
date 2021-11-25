@@ -50,7 +50,7 @@ export default function Layout({
 
 					<ColorCell className={styles.cell} 
 						colorCode="#D1D3D4"
-						varName="$nasa_grey"
+						varName="$grey_1"
 					/>
 						
 				</div>
