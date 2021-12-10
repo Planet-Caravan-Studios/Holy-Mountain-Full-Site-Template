@@ -37,6 +37,22 @@ FONTS
 	}
 
 
+	/***** Typewriter *****/
+	/* https://www.dafont.com/computerfont.font */
+		@font-face {
+			font-family: "MyUnderwood";
+			src: url("/fonts/MyUnderwood.ttf") format("ttf");
+			//font-weight: 100;
+			font-display: fallback;
+		}
+		.typewriter{
+			font-family: "MyUnderwood";
+			line-height:1;
+		}
+
+
+
+
 /***** IBM Plex Mono *****/
 
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap');

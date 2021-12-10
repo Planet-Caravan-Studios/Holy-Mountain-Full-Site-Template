@@ -64,9 +64,9 @@ export default function FixedSplit({
 	      <br/><br/>
 	      <p className="body">
 	        This template element is your standard 2 div side-by-side layout, but with a few twists.
-	  	<br/><br/>
-	  	Like all Holy Mountain Framework elements, 
-	  	it's been built with responsivity and developer ease of use in mind.
+			  	<br/><br/>
+			  	Like all Holy Mountain Framework elements, 
+			  	it's been built with responsivity and developer ease of use in mind.
 	      </p>
 	    </div>
 
