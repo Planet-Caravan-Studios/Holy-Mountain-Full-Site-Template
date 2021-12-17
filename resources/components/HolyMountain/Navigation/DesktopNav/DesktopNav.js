@@ -1,5 +1,5 @@
 import styles from './DesktopNav.module.scss'
-import Container from '@components/HolyMountain/Layout/Container/Container'
+import Container from '@components/HolyMountain/Layout/Container'
 
 export default function DesktopNav({ 
     //props

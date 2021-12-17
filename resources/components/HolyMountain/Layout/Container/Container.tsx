@@ -4,9 +4,10 @@ export default function Container({
 	children,
 	containerSize, 
 	flex,
+  className
 }) {
   return (
-      <div className={ styles.container + (flex ? ' '+styles.flex: '') }>
+      <div className={ className +' '+styles.container + (flex ? ' '+styles.flex: '') }>
         {children}
       </div>
   )

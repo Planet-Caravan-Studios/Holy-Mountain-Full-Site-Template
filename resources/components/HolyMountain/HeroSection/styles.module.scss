@@ -1,18 +1,41 @@
-/***** ========== *****/
-/***** CONTAINER  *****/
-/***** ========== *****/
-.container {
-	max-width: 1450px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 35px;
-	box-sizing: border-box;
-	position: relative;
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
 
-	&.flex{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+
+.HeroSection{
+	padding: 100px 0;
+	height: 600px;
+	@include flex_center;
+	
+	.inner {
+		background-color: rgba($white, 0.95);
+		max-width: 1000px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+
+		&.flex{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.headline{
+		font-family: $font_display;
+		font-size: $font_size_xl;
+		margin-bottom: 0px;
+	}
+	.subhead{
+		font-family: $font_body;
+		font-size: $font_size_body;
+		margin-bottom: 35px;
+	}
+	.body{
+		
+	}
+	.cta{
+		display: inline-block;;
+		margin-top: 35px;
 	}
 }

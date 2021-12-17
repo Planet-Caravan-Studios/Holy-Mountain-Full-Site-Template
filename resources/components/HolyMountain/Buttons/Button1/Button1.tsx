@@ -1,4 +1,4 @@
-import styles from './Button1.module.scss'
+import styles from './styles.module.scss'
 import styled from "styled-components";
 
 const Button = styled.a`
@@ -11,6 +11,7 @@ const Button = styled.a`
 
 export default function Button1({ 
 	//page vars
+	className,
 	children,
 	href,
 	newTab,
@@ -22,7 +23,7 @@ export default function Button1({
   return (
   	<Button  
   		href={(href? href : "#")} 
-  		className={styles.Button1+' '+(extraClass? extraClass : "")} 
+  		className={className +' '+ styles.Button1+' '+(extraClass? extraClass : "")} 
   		target={(newTab? "_blank" : "")}
   		data-modal={(modal? modal : "")}
   		data-youtube-id={(dataYoutubeId? dataYoutubeId : "")}
