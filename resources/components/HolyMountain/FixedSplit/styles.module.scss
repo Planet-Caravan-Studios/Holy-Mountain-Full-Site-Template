@@ -48,8 +48,29 @@ Descriptionm:
 			background-color: rgba(200,200,200,0.8);
 			backdrop-filter: blur(5px);
 			padding: 35px 50px;
+
+			.heading{
+				font-family: $font_display;
+				font-size: $font_size_xl;
+				line-height: 1;
+				margin-bottom: 15px;
+			}
+
+			.body{
+
+			}
+
+			.cta{
+				margin-top: 35px;
+			}
 		}
 	}
+
+
+
+
+
+/***** OLD CODE  *****/
 
 
 	/***** static size: this class styles the div with a fixed pixel size  *****/

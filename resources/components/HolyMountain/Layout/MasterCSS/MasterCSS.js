@@ -1,10 +1,6 @@
 /************************************
 
 MasterCSS 	
-	
-	-	Link all JS files in desired order, 
-		then add this component to the end of 
-		your global layout, so all JS is loaded last.
 
 ************************************/
 

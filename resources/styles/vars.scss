@@ -14,9 +14,16 @@ Description:	Store SCSS vars here
 	$grey_2:			#3e3e3e;
 
 	$red: 				#fb0000;
-	$dark_yellow: 	#806914;
+	$dark-yellow: 	#806914;
 
-	
+	//Holy Mountain Colors
+		$hm-red:		#e30022;
+		$hm-orange:	#ff8b00;
+		$hm-yellow:	#fee72f;
+		$hm-green:		#03c03c;
+		$hm-blue:		#1f75fe;
+		$hm-purple:	#662b7e;
+
 	/***** Verner Panton Colors *****/
 		$vp-light-blue: 	#3a819f;
 		$vp-blue: 				#3c69ad;
@@ -95,4 +102,4 @@ Description:	Store SCSS vars here
 		0 0 10vw $red, 
 		0 0 10vw $red, 
 		0 0 .4vw $red, 
-		.25vw .25vw .1vw $dark_yellow;
+		.25vw .25vw .1vw $dark-yellow;
