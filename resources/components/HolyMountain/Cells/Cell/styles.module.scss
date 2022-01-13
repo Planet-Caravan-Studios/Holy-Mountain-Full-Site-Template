@@ -1,0 +1,30 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	Cell
+Descriptionm:		
+
+
+**************************************************/
+
+
+.cell{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+
+	.inner{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
+}

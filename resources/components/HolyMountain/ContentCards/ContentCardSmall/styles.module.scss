@@ -1,0 +1,37 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	ContentCardSmall
+Descriptionm:		
+
+
+**************************************************/
+	.Card{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 550px;
+		padding: 35px 35px;
+
+		.heading{
+			font-family: $font_display;
+			font-size: $font_size_xl;
+			line-height: 1;
+			margin-bottom: 15px;
+		}
+
+		.body{
+			
+		}
+
+		.cta{
+			margin-top: 35px;
+		}
+	}
+
+

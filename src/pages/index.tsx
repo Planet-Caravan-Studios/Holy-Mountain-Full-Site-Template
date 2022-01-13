@@ -1,9 +1,18 @@
 import Head from "next/head";
+
+
+
 import Layout from "@components/HolyMountain/Layout/Layout/Layout";
 import Container from "@components/HolyMountain/Layout/Container";
+
 import HeroSection from "@components/HolyMountain/HeroSection";
 import FixedSplit from "@components/HolyMountain/FixedSplit";
 import BannerSection from "@components/HolyMountain/BannerSection";
+
+import CellGrid from "@components/HolyMountain/Cells/CellGrid";
+import Cell from "@components/HolyMountain/Cells/Cell";
+
+import ContentCardSmall from "@components/HolyMountain/ContentCards/ContentCardSmall";
 
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
@@ -50,6 +59,7 @@ export default function Index() {
 
             <section>
                 <FixedSplit
+                    key="123"
                     fixedRight
                     fixedWidth="850px"
                     backgroundLeft="url('/images/hm-hero-img.png')"
@@ -80,6 +90,7 @@ export default function Index() {
 
             <section>
                 <FixedSplit
+                    key="456"
                     fixedLeft
                     contentLeft
                     fixedWidth="850px"
@@ -95,6 +106,45 @@ export default function Index() {
                     ctaLinkLeft="#"
                     ctaTextLeft="READ MORE"
                 />
+            </section>
+
+            <section>
+                <Container>
+                    <CellGrid columns="2">
+                        
+                        <Cell>
+                            <ContentCardSmall
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                body="
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.
+                                "
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell>
+                            <ContentCardSmall
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                body="
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.
+                                "
+                            />
+                        </Cell>
+                        
+                    </CellGrid>
+                </Container>
+                
             </section>
 
         </Layout>
