@@ -16,6 +16,7 @@ import 'swiper/modules/thumbs/thumbs.scss';
 //import "@styles/sliders.scss";
 //import "@styles/forms.scss";
 import '@styles/style.scss';
+import Theme from "@components/HolyMountain/Theme";
 import Head from 'next/head'
 
 
@@ -26,5 +27,9 @@ import { AppProps } from "next/app";
 //import "../../public/styles/style.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Theme>
+      <Component {...pageProps} />
+    </Theme>
+  );
 }

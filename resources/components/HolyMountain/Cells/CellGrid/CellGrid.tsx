@@ -9,7 +9,10 @@ export default function CellGrid({
   columns,
 }) {
   return (
-  	<div className={styles.cellGrid +" "+ classname} columns={columns} >
+  	<div 
+      className={styles.cellGrid +" "+ classname} 
+      columns={columns} 
+    >
 	  	{children}
 		</div>
   )

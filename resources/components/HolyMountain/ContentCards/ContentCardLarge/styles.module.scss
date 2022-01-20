@@ -16,22 +16,18 @@ Descriptionm:
 		flex-direction: column;
 		width: 100%;
 		//max-width: 550px;
-		
+		height: 100%;
 		padding: 35px 35px;
-
-		.image{
-			margin-bottom: 35px;
-		}
 
 		.heading{
 			font-family: $font_display;
 			font-size: $font_size_xl;
 			line-height: 1;
-			
+			margin-bottom: 15px;
 		}
 
 		.body{
-			margin-top: 15px;
+			
 		}
 
 		.cta{

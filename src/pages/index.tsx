@@ -30,7 +30,7 @@ export default function Index() {
             <TwitterCardMeta url={"/"} />
 
             <HeroSection 
-                background="/images/hm-hero-img.png"
+                background="/images/hm-hero-img.jpg"
                 headline="The Holy Mountain" 
                 subhead="Frontend Framework"
                 body={['\
@@ -59,10 +59,10 @@ export default function Index() {
 
             <section>
                 <FixedSplit
-                    key="123"
+                    key="FixedSplit_1"
                     fixedRight
                     fixedWidth="850px"
-                    backgroundLeft="url('/images/hm-hero-img.png')"
+                    backgroundLeft="url('/images/hm-hero-img.jpg')"
                     contentRight
                     headingRight="Coding Style"
                     bodyRight={["\
@@ -89,31 +89,46 @@ export default function Index() {
             </section>
 
             <section>
-                <FixedSplit
-                    key="456"
-                    fixedLeft
-                    contentLeft
-                    fixedWidth="850px"
-                    backgroundRight="url('/images/hm-hero-img.png')"
-                    headingLeft="FixedWidth Component"
-                    bodyLeft={[
-                        <ul className='listFix'>
-                            <li>List Item 1</li>
-                            <li>List Item 2</li>
-                            <li>List Item 3</li>
-                        </ul>
-                    ]}
-                    ctaLinkLeft="#"
-                    ctaTextLeft="READ MORE"
-                />
-            </section>
-
-            <section>
                 <Container>
-                    <CellGrid columns="2">
+                    <CellGrid >
                         
-                        <Cell>
+                        <Cell cellOuterWidth="33.3%">
                             <ContentCardSmall
+                                key="ContentCardSmall_1"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                body={["\
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+                                    sed do eiusmod tempor incididunt ut labore et dolore \
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                                    exercitation ullamco laboris nisi ut aliquip ex ea \
+                                    commodo consequat.\
+                                    ", <><br/> <br/></> ,"\
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+                                    sed do eiusmod tempor incididunt ut labore et dolore \
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                                    exercitation ullamco laboris nisi ut aliquip ex ea \
+                                    commodo consequat.\
+                                "]}
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="66.6%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_2"
+                                image="/images/hm-hero-img.jpg"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="50%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_2"
                                 backgroundColor="#fafafa"
                                 heading="Heading"
                                 body="
@@ -128,17 +143,33 @@ export default function Index() {
                             />
                         </Cell>
 
-                        <Cell>
+                        <Cell cellOuterWidth="25%" >
                             <ContentCardSmall
+                                key="ContentCardSmall_2"
                                 backgroundColor="#fafafa"
                                 heading="Heading"
                                 body="
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                     sed do eiusmod tempor incididunt ut labore et dolore 
-                                    magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat.
+                                    magna aliqua.
                                 "
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="25%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_2"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                body="
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. 
+                                "
+                                ctaLink="#"
+                                ctaText="READ MORE"
                             />
                         </Cell>
                         
@@ -146,6 +177,28 @@ export default function Index() {
                 </Container>
                 
             </section>
+
+            <section>
+                <FixedSplit
+                    key="FixedSplit_2"
+                    fixedLeft
+                    contentLeft
+                    fixedWidth="850px"
+                    backgroundRight="url('/images/hm-hero-img.jpg')"
+                    headingLeft="FixedWidth Component"
+                    bodyLeft={[
+                        <ul className='listFix'>
+                            <li>List Item 1</li>
+                            <li>List Item 2</li>
+                            <li>List Item 3</li>
+                        </ul>
+                    ]}
+                    ctaLinkLeft="#"
+                    ctaTextLeft="READ MORE"
+                />
+            </section>
+
+            
 
         </Layout>
     );

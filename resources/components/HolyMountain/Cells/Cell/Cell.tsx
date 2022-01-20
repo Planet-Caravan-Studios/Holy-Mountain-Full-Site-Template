@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import styled from "styled-components";
 
 const Outer = styled.div`
-	width: calc(100% / ${props => props.columns || "1"}); 
+	width: ${props => props.cellOuterWidth || "100%"}; 
 	padding: ${props => props.padding || "25px"};
 	display: flex;
 	justify-content: center;
@@ -11,29 +11,27 @@ const Outer = styled.div`
 		@media only screen and (max-width : 1200px) { 
 	  	width: 100%;
 		}
-  }
 
 `;
 
 const Inner = styled.div`
-	max-width: ${props => props.cellInnerWidth || "650px"};
+	max-width: ${props => props.cellInnerWidth || "100%"};
 	display: flex;
 	justify-content: center;
 	align-items: center;
 `;
 
 
-export default function CellGrid({ 
+export default function Cell({ 
 	children,
   classname,
-  columns,
+  cellOuterWidth,
   cellInnerWidth,
 }) {
   return (
 	  <Outer 
-	    className={styles.cell, classname}
-	    columns={columns}
-	    cellInnerWidth={cellInnerWidth}
+	    className={styles.cell +" "+ classname}
+	    cellOuterWidth={cellOuterWidth}
 	  >
       <Inner 
       	className={styles.inner} 

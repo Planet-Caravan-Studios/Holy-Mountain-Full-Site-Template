@@ -22,7 +22,7 @@ const Image = styled.div`
 
 const Text = styled.div`
 
-  
+  min-height: 300px;
   color: ${props => props.theme.colors.black};
 
 	@media only screen and (max-width : 1200px) { 
@@ -38,11 +38,10 @@ const Link = styled.div`
 `;
 
 
-export default function ContentCardSmall({ 
+export default function ContentCardLarge({ 
 	children,
   classname,
   image,
-  imageAlt,
   backgroundImage,
   backgroundColor,
   backgroundPosition,
@@ -74,16 +73,15 @@ export default function ContentCardSmall({
 				}
 			</Text>
 			
-			<Link className={styles.link}>
-				{/*{ctaLink && */}
+			{ctaLink && 
+				<Link className={styles.link}>
 	        <Button1 
 	        	className={styles.cta +' button'} 
 	        	href={ctaLink}>
 	        	{ctaText}
 	        </Button1>
-	      {/*}*/}
-			</Link >
-				
+				</Link >
+			}
   		
 			
 
