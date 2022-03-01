@@ -1,0 +1,64 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Necro Cult Zine Component
+
+
+Component Name: 	Typography
+Description:		Typography samples for Necro Cult Zine
+
+
+**************************************************/
+
+/***** ========== *****/
+/***** TYPOGRAPHY *****/
+/***** ========== *****/
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	ul{
+		background-color: $white;
+		list-style: none;
+		padding: 35px;
+		margin: 35px;
+
+		
+		li{
+			margin-bottom: 35px;
+			display: inline-block;
+
+			//Fonts
+			&.old_english{
+				font-size: $font_size_heading;
+			}
+			&.labelmaker{
+				font-size: $font_size_subhead;
+				background-color: $black;
+				color: $white;
+			}
+			&.typewriter{
+				font-size: $font_size_body;
+			}
+
+			//Font Sizes
+			&.heading{
+				font-size: $font_size_heading;
+			}
+			&.subhead{
+				font-size: $font_size_subhead;
+			}
+			&.body{
+				font-size: $font_size_body;
+			}
+			&.detail{
+				font-size: $font_size_detail;
+			}
+		}
+	}
+
+}

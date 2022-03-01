@@ -18,7 +18,7 @@
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
     "js-yaml": "^3.14.0",
-    "next": "9.5.1",
+    "next": "^10.0.4",
     "next-mdx-enhanced": "^3.1.0",
     "normalize.css": "^8.0.1",
     "react": "16.13.1",
@@ -36,9 +36,38 @@
     "@types/jest": "^26.0.9",
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
+    "babel-plugin-styled-components": "^2.0.6",
     "jest": "^26.3.0",
     "ts-jest": "^26.2.0",
     "typescript": "^3.8.3",
     "yaml-loader": "^0.6.0"
-  }
+  },
+  "babel": {
+      "env": {
+        "development": {
+          "presets": ["next/babel"],
+          "plugins": [
+            [
+              "styled-components",
+              {
+                "ssr": true,
+                "displayName": true
+              }
+            ]
+          ]
+        },
+        "production": {
+          "presets": ["next/babel"],
+          "plugins": [
+            [
+              "styled-components",
+              {
+                "ssr": true,
+                "displayName": false
+              }
+            ]
+          ]
+        }
+      }
+    }
 }

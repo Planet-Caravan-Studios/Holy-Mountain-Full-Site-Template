@@ -1,0 +1,23 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Necro Cult Zine Component
+
+
+Component Name: 	Layout
+Description:		
+
+
+**************************************************/
+
+.OuterLayout{
+	background-image: url('/images/textures/light-paper-fibers.png');
+	//backdrop-filter: opacity(0.5);
+
+	.InnerLayout{
+		background-color: rgba($black, 0.35);
+	}
+}
+

@@ -1,0 +1,213 @@
+@import "../../../public/styles/vars.scss";
+@import "../../../public/styles/mixins.scss";
+
+
+/**************************************************
+Necro Cult Zine Component
+
+
+Component Name: 	BlogListing
+Description:		
+
+
+**************************************************/
+
+$fixedWidth: 400px;
+
+
+.blogListing {
+	width: 100%;
+	max-width: 1000px;
+	margin: 75px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: row;
+	
+	/***** Image Section *****/
+	.image{
+		width:$fixedWidth;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items:center;
+		z-index: 13;
+		position: relative;
+		padding-right: 15px;
+
+		img{
+			transform-origin: bottom center;
+			perspective-origin: bottom center;
+			transform:none;
+			transition:.5s;
+		}
+
+		.imageCredit{
+			display: block;
+			margin-top: 5px;
+			padding: 5px 10px;
+			font-size: $font_size_body;
+			//font-style: italic;
+			align-self: flex-start;
+			background-color: $black;
+			color: $white;
+		}
+
+		&:hover{
+			img{
+				filter: grayscale(1);
+				transform: translateX( 0px ) translateY( -15px ) translateZ(50px)  scale(1.05);
+				box-shadow:-5px -5px 15px 15px rgba(255,255,255,0.25);
+				perspective:200px;
+			}
+		}
+	}
+
+
+	/***** Copy Section *****/
+	.copy{
+		width:calc(100% - #{$fixedWidth} );
+		position: relative;
+		z-index: 12;
+		box-sizing: border-box;
+		padding-left: 50px;
+
+		.copy .inner{
+			max-width: 600px;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: transparent;
+		}
+
+		/***** Title ****/
+		.title{
+			position: relative;
+			.titleMain{
+				font-family: $font_display;
+				font-size: $font_size_heading;
+				padding: 25px 35px;
+				display: inline-block;
+				font-weight: 300;
+				text-decoration:none;
+				position: relative;
+				z-index: 15;
+				background: $white;
+				box-sizing: border-box;
+				overflow: visible;
+				transition: $transition_medium;
+				will-change: text-shadow;
+
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+				
+				padding-right: 80px;
+				top: 10px;
+				left: -15px;
+				position: relative;
+				width: 100%;
+				margin: 0;
+				font-family: $font_display;
+				
+				transform: rotate(2deg);
+
+				&:hover{
+					//text-shadow: var(--text-glow-red);
+				}
+			}
+
+			/***** Column ****/
+			.columnName{
+				z-index: 16;
+				font-family: $font_alt;
+				font-size: calc( #{$font_size_body} + 5px);
+				letter-spacing:0.001em;
+				background-color: $black;
+				color: $white;
+				display: inline-block;
+				text-align: center;
+				padding: 5px 15px;
+				position: absolute;
+				top: 15px;
+				right: -85px;
+				transform: rotate(20deg);
+			}			  
+		}
+
+		/***** Body ****/
+		.snippet{
+			font-size:1.8rem;
+			line-height: 2.4rem;
+			padding: 35px;
+			box-sizing: border-box;
+			z-index: 14;
+			background-color: $white;
+			padding-left:35px;
+			transform: rotate(1deg);
+			widows: 3;
+
+		    	 p{
+				margin-bottom: 25px;
+				transform: rotate(-2deg);
+				text-align: justify;
+				widows:inherit;
+
+				&:first-letter{
+					font-family: $font_display;
+					font-size: 4.5rem;
+					line-height: 1.8rem;
+					letter-spacing: .3rem;
+					float:left;
+				}
+		    	}
+
+		    	.readMore{
+		    		background-color: $black;
+				color: $white;
+				font-family: $font_display;
+				font-size: 3.6rem;
+				font-weight: 100;
+				display: inline-block;
+				padding: 10px 25px;
+				text-decoration: none;
+				transition: .25s;
+				transition-timing-function: ease-in-out;
+				will-change: text-shadow;
+
+				&:hover{
+		   			// text-shadow: var(--text-glow-red);
+		  		}
+		    	}
+		}
+		
+	}
+
+
+	/***** Reversed *****/
+	&.reverse{
+		flex-direction: row-reverse;
+		.copy{
+			padding-left: 0px;
+			padding-right: 50px;
+			/***** Column ****/
+			.columnName{
+				/*top: 25px;
+				right: auto;
+				left: -55px;
+				transform: rotate(-20deg);*/
+			}
+			.titleMain{				
+				transform: rotate(-2deg);
+
+				//text-align: right;
+
+				&:hover{
+					//text-shadow: var(--text-glow-red);
+				}
+			}
+		}
+		
+	}
+}
+
+
+

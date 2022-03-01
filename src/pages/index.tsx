@@ -1,7 +1,5 @@
 import Head from "next/head";
 
-
-
 import Layout from "@components/HolyMountain/Layout/Layout/Layout";
 import Container from "@components/HolyMountain/Layout/Container";
 
@@ -29,7 +27,7 @@ export default function Index() {
             <OpenGraphMeta url={"/"} />
             <TwitterCardMeta url={"/"} />
 
-            <HeroSection 
+            <HeroSection key="HeroSection"
                 background="/images/hm-hero-img.jpg"
                 headline="The Holy Mountain" 
                 subhead="Frontend Framework"
@@ -37,7 +35,8 @@ export default function Index() {
                     The philosophy behind the Holy Mountain framework is\
                     simple: everything should be straightforward, easy to\
                     understand, and easy to use. Or in the words of William S.\
-                    Buroughs: "Do Easy".  Before you do something, simply take\
+                    Buroughs: "Do Easy".  \
+                    Before you do something, simply take\
                     a moment to work out the easiest, most direct way to do\
                     said thing.  The result is code that you can easily build\
                     on top of, while having the framework take care of most of\
@@ -46,7 +45,7 @@ export default function Index() {
                 ctaText="Read More"
             />     
 
-            <BannerSection 
+            <BannerSection key="Banner-1"
                 heading="Framework Demo" 
                 body={['\
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\
@@ -58,8 +57,7 @@ export default function Index() {
             />            
 
             <section>
-                <FixedSplit
-                    key="FixedSplit_1"
+                <FixedSplit key="FixedSplit-1"                    
                     fixedRight
                     fixedWidth="850px"
                     backgroundLeft="url('/images/hm-hero-img.jpg')"
@@ -90,7 +88,7 @@ export default function Index() {
 
             <section>
                 <Container>
-                    <CellGrid >
+                    <CellGrid key="CellGrid-1">
                         
                         <Cell cellOuterWidth="33.3%">
                             <ContentCardSmall
@@ -187,15 +185,84 @@ export default function Index() {
                     backgroundRight="url('/images/hm-hero-img.jpg')"
                     headingLeft="FixedWidth Component"
                     bodyLeft={[
-                        <ul className='listFix'>
+                       /* <ul className='listFix'>
                             <li>List Item 1</li>
                             <li>List Item 2</li>
                             <li>List Item 3</li>
-                        </ul>
+                        </ul>*/
                     ]}
                     ctaLinkLeft="#"
                     ctaTextLeft="READ MORE"
                 />
+            </section>
+
+            <section>
+                <Container>
+                    <CellGrid key="CellGrid-1">
+                        
+                        <Cell cellOuterWidth="33.3%">
+                            <ContentCardSmall
+                                key="ContentCardSmall_1"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="33.3%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_2"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="33.3%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_3"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="50%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_4"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="25%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_5"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+
+                        <Cell cellOuterWidth="25%" >
+                            <ContentCardSmall
+                                key="ContentCardSmall_6"
+                                backgroundColor="#fafafa"
+                                heading="Heading"
+                                ctaLink="#"
+                                ctaText="READ MORE"
+                            />
+                        </Cell>
+                        
+                    </CellGrid>
+                </Container>
+                
             </section>
 
             

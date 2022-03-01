@@ -1,0 +1,20 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	Footer
+Description:		
+
+
+**************************************************/
+
+.Footer{
+	border-top: solid 1px  $black;
+	margin-top: 50px;
+	padding: 50px 0;
+}

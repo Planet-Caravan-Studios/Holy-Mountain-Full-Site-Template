@@ -1,0 +1,27 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Layout
+Description:		
+
+
+**************************************************/
+
+
+
+.OuterLayout{
+	background-image: url('/images/textures/cardboard.png');
+	background-repeat: repeat;
+	//backdrop-filter: opacity(0.5);
+	
+
+	.InnerLayout{
+		background-color: rgba($white, 0.25);
+		min-height: 100vh;
+	}
+}
