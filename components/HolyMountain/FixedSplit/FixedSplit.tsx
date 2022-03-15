@@ -80,6 +80,7 @@ export default function FixedSplit({
 				{ctaLinkLeft && 
           <Button1 
           	className={styles.cta +' button'} 
+          	extraClass="topMargin"
           	href={ctaLinkLeft}>
           	{ctaTextLeft}
           </Button1>
@@ -114,6 +115,7 @@ export default function FixedSplit({
   				{ctaLinkRight && 
             <Button1 
             	className={styles.cta} 
+            	extraClass="topMargin"
             	href={ctaLinkRight}>
             	{ctaTextRight}
             </Button1>

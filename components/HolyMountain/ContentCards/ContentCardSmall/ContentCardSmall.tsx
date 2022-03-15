@@ -73,6 +73,7 @@ export default function ContentCardSmall({
 				{ctaLink && 
 	        <Button1 
 	        	className={styles.cta +' button'} 
+	        	extraClass="topMargin"
 	        	href={ctaLink}>
 	        	{ctaText}
 	        </Button1>

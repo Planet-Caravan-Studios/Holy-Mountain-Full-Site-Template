@@ -6,6 +6,9 @@ const Button = styled.a`
 	&.sideMargin{
 		margin: 0px 15px;
 	}
+	&.topMargin{
+		margin: 35px 0px 0px;
+	}
 
 `;
 

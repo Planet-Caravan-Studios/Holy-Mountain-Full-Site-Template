@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import styles from './Layout.module.scss'
 import Head from 'next/head'
 import MasterJS from '@components/HolyMountain/Layout/MasterJS/MasterJS'
@@ -13,12 +14,16 @@ export default function Layout({
 	//props
 	children,
 }) {
+
+	useEffect(() => {
+		$(document).ready(function() {
+			//js code
+		});
+	});
+
   return (
 	<>
-		<Head>
-			<MasterCSS/>
-		</Head>
-		
+		<MasterCSS/>
 		<div className={styles.OuterLayout}>
   			<NavMenu/>
   			<div className={styles.InnerLayout}>

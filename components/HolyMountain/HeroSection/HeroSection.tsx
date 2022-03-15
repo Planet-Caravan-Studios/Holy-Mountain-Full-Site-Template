@@ -41,7 +41,11 @@ export default function HeroSection({
             <p className={styles.body}>{body}</p>
           }
           {ctaLink && 
-            <Button1 className={styles.cta +' button'} href={ctaLink}>{ctaText}</Button1>
+            <Button1 
+              className={styles.cta +' button'}
+              extraClass="topMargin" 
+              href={ctaLink}>{ctaText}
+            </Button1>
           }
         </Container>
       </Hero>
