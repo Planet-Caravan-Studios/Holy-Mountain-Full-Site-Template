@@ -9,12 +9,6 @@ import 'swiper/modules/pagination/pagination.scss';
 import 'swiper/modules/thumbs/thumbs.scss';
 
 
-
-//import "@styles/vars.scss";
-//import "@styles/mixins.scss";
-//import "@styles/fonts.scss";
-//import "@styles/sliders.scss";
-//import "@styles/forms.scss";
 import '@styles/style.scss';
 import Theme from "@components/HolyMountain/Theme";
 import Head from 'next/head'
