@@ -25,7 +25,7 @@ Description:		Slide-in nav menu
 	justify-content: flex-start;
 	position: absolute;
 	top: 0;
-	left: -300px;
+	right: -300px;
 
 	$reservedBottom: 100px;
 	padding-bottom: $reservedBottom;

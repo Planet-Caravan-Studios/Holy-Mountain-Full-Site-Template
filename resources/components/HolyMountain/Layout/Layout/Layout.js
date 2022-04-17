@@ -23,6 +23,7 @@ export default function Layout({
   			<NavMenu/>
   			<div className={styles.InnerLayout}>
   				<DesktopNav/>
+  				<NavMenu/>
 	  			{/*<MobileNav/>*/}
 					{children}
 					<Footer/>

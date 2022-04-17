@@ -36,8 +36,9 @@ GENERAL
 			color: $primary_color;
 			font-family: $font_body;
 			font-size: $font_size_body;
-			line-height: 1.2;
-			min-height: 100vh;
+			line-height: 1.35;
+			//line-height: calc(1em + 0.5rem);
+			min-height: 100%;
 			background-color: $background_color;
 			margin: 0;
 			padding: 0;
@@ -111,9 +112,13 @@ GENERAL
 				//border-bottom: 3px solid;
 			}
 
+			//catch-all for links with no class
 			&:not([class]){
 				text-decoration: underline;
 				text-decoration-style: dotted;
+				&:hover{
+					text-decoration-style: solid;
+				}
 			}
 		}
 

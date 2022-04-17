@@ -1,20 +1,22 @@
 import Head from "next/head";
 
-import Layout from "@components/HolyMountain/Layout/Layout/Layout";
-import Container from "@components/HolyMountain/Layout/Container";
+/* Base Level Components */
+    import Layout from "@components/HolyMountain/Layout/Layout/Layout";
+    import Container from "@components/HolyMountain/Layout/Container";
 
-import HeroSection from "@components/HolyMountain/HeroSection";
-import FixedSplit from "@components/HolyMountain/FixedSplit";
-import BannerSection from "@components/HolyMountain/BannerSection";
+    import BasicMeta from "../components/meta/BasicMeta";
+    import OpenGraphMeta from "../components/meta/OpenGraphMeta";
+    import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 
-import CellGrid from "@components/HolyMountain/Cells/CellGrid";
-import Cell from "@components/HolyMountain/Cells/Cell";
+/* Design Level Components */
+    import HeroSection from "@components/HolyMountain/HeroSection";
+    import FixedSplit from "@components/HolyMountain/FixedSplit";
+    import BannerSection from "@components/HolyMountain/BannerSection";
+    import CellGrid from "@components/HolyMountain/Cells/CellGrid";
+    import Cell from "@components/HolyMountain/Cells/Cell";
+    import ContentCardSmall from "@components/HolyMountain/ContentCards/ContentCardSmall";
 
-import ContentCardSmall from "@components/HolyMountain/ContentCards/ContentCardSmall";
 
-import BasicMeta from "../components/meta/BasicMeta";
-import OpenGraphMeta from "../components/meta/OpenGraphMeta";
-import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 
 export default function Index() {
     return (
