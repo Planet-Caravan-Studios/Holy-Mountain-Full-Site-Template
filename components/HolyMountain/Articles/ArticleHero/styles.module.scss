@@ -2,8 +2,19 @@
 @import "@styles/mixins.scss";
 
 
-.HeroSection{
-	padding: 100px 0;
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	ArticleHero
+Description:		
+
+
+**************************************************/
+
+
+.ArticleHero{
+	padding: 100px 35px;
 	height: 600px;
 	@include flex_center;
 	

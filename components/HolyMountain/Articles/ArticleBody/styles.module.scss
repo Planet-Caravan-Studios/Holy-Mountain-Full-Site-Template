@@ -1,0 +1,48 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Framework Component
+
+
+Component Name: 	ArticleBody
+Description:		
+
+
+**************************************************/
+
+$marginBottom: 50px;
+
+.outer{
+	margin: 100px 0;
+
+	.inner{
+		background-color: $grey_3;
+		background-image: url('/images/textures/cardboard.png');
+		padding: 50px 50px;
+		max-width: $content_width_m;
+		margin: auto;
+		box-shadow: $nice_shadow;
+	}
+
+	p{
+		margin-bottom: $marginBottom;
+		line-height: 1.5;
+
+		&.indent::first-letter{
+			padding-left: 1.25ch;
+			font-size: 2em;
+			line-height: 0.8;
+			//font-weight: 600;
+		}
+	}
+
+	img{
+		display: block;
+		width: 100%;
+		max-width: 400px;
+		margin: auto;
+		margin-bottom: $marginBottom;
+	}
+}
