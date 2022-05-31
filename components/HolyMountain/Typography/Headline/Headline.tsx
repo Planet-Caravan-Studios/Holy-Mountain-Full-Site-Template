@@ -1,4 +1,4 @@
-import styles from './Headline.module.scss'
+import styles from './styles.module.scss'
 import styled from "styled-components";
 
 
@@ -8,9 +8,7 @@ export default function Headline({
 }) {
   return (
   	<span className={styles.Headline}>
-  		<span className={styles.inner}>
   			{children}
-  		</span>
   	</span>
   	
   )

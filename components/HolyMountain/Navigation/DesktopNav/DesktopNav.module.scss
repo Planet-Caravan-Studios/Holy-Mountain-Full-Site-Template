@@ -22,7 +22,7 @@ $static_width: 450px;
 .contentLeft{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
 	max-width: $static_width;
@@ -47,8 +47,14 @@ $static_width: 450px;
 .contentRight{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	width: 100%;
 	max-width: calc(100% - #{$static_width});
+	padding-right: 35px;
+}
+
+.navButton{
+	cursor: pointer;
+	font-size: 36px;
 }

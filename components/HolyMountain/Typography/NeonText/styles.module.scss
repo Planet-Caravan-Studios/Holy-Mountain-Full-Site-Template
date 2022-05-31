@@ -1,0 +1,57 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	PlainText
+Description:		Regular ordinary text component
+
+
+**************************************************/
+
+.NeonText {
+	font-size: 5vw;
+	padding: 25px;
+	color: $white;
+	font-family: $font_display;
+	text-shadow:
+		0 0 7px $white,
+		0 0 10px $white,
+		0 0 21px $white,
+		0 0 42px $red,
+		0 0 82px $red,
+		0 0 92px $red,
+		0 0 102px $red,
+		0 0 151px $red;
+	animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+@keyframes pulsate {
+
+	100% {
+		text-shadow:
+			0 0 4px $white,
+			0 0 11px $white,
+			0 0 19px $white,
+			0 0 40px $red,
+			0 0 80px $red,
+			0 0 90px $red,
+			0 0 100px $red,
+			0 0 150px $red;
+	}
+
+	0% {
+		text-shadow:
+			0 0 4px $white,
+			0 0 10px $white,
+			0 0 18px $white,
+			0 0 38px $red,
+			0 0 73px $red,
+			0 0 80px $red,
+			0 0 94px $red,
+			0 0 140px $red;
+	}
+}

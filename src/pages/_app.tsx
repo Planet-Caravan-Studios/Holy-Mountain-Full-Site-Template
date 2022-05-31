@@ -12,6 +12,7 @@ import 'swiper/modules/thumbs/thumbs.scss';
 import '@styles/style.scss';
 import Theme from "@components/HolyMountain/Theme";
 import Head from 'next/head'
+import $ from 'jquery'; 
 
 
 import { AppProps } from "next/app";

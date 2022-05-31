@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ModalWrapper.module.scss'
 import styled from "styled-components";
-import $ from 'jquery'; 
+ 
 
 import ModalOverlay from '@components/Modals/ModalOverlay/ModalOverlay'
 import DefaultModal from '@components/Modals/DefaultModal/DefaultModal'
