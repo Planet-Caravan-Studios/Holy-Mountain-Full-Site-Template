@@ -37,11 +37,8 @@ export default function Index() {
                 <ArticleBody id="articleBody">
 
                     <Headline>
-                        <NeonText>
-                            Neon Text
-                        </NeonText>
+                        Headline Text
                     </Headline>
-                    
                     
                     <p >
                       Vastness is bearable only through love corpus callosum
@@ -55,6 +52,12 @@ export default function Index() {
                       circumnavigated great turbulent clouds and billions upon billions upon
                       billions upon billions upon billions upon billions upon billions.            
                     </p>
+
+                    <Headline>
+                        <NeonText>
+                            Neon Text
+                        </NeonText>
+                    </Headline>
 
                     <p>
                        Dispassionate extraterrestrial observer rogue quasar Cambrian explosion

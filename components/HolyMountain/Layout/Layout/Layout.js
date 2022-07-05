@@ -7,6 +7,7 @@ import DesktopNav from '@components/HolyMountain/Navigation/DesktopNav/DesktopNa
 //import MobileNav from '@components/HolyMountain/Navigation/MobileNav/MobileNav'
 import NavMenu from '@components/HolyMountain/Navigation/NavMenu/NavMenu'
 import Footer from '@components/HolyMountain/Navigation/Footer/Footer'
+import ModalWrapper from '@components/HolyMountain/Modals/ModalWrapper/ModalWrapper'
 
 
 
@@ -29,10 +30,11 @@ export default function Layout({
   			<div className={styles.InnerLayout}>
   				<DesktopNav/>
 	  			{/*<MobileNav/>*/}
-					{children}
-					<Footer/>
+				{children}
+				<Footer/>
   			</div>
 		</div>
+		<ModalWrapper/>
 		<MasterJS/>
 	</>
   )

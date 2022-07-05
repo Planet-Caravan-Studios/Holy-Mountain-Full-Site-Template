@@ -1,6 +1,5 @@
 import styles from './style.module.scss'
 import styled from "styled-components";
-import $ from 'jquery'; 
 
 const Overlay = styled.div`
 	position: fixed;

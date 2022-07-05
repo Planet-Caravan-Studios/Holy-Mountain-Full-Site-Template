@@ -3,10 +3,10 @@ import styles from './ModalWrapper.module.scss'
 import styled from "styled-components";
  
 
-import ModalOverlay from '@components/Modals/ModalOverlay/ModalOverlay'
-import DefaultModal from '@components/Modals/DefaultModal/DefaultModal'
-import VideoModal from '@components/Modals/VideoModal/VideoModal'
-import ThankYouModal from '@components/Modals/ThankYouModal/ThankYouModal'
+import ModalOverlay from '@components/HolyMountain/Modals/ModalOverlay/ModalOverlay'
+import DefaultModal from '@components/HolyMountain/Modals/DefaultModal/DefaultModal'
+import VideoModal from '@components/HolyMountain/Modals/VideoModal/VideoModal'
+import ThankYouModal from '@components/HolyMountain/Modals/ThankYouModal/ThankYouModal'
 
 //import functions from '@components/Modals/ModalWrapper/functions.js'
 

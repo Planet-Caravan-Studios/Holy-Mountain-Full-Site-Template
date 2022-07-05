@@ -1,8 +1,7 @@
 import styles from './style.module.scss';
 import styled from "styled-components";
 //import $ from 'jquery'; 
-import Button1 from '@components/Typography/Button1'
-//import functions from '@components/Modals/ModalWrapper/functions.js'
+import Button1 from "@components/HolyMountain/Buttons/Button1";
 
 const Modal = styled.div`
 	
@@ -11,7 +10,6 @@ const Modal = styled.div`
 		opacity: 1;
 		pointer-events: auto;
 	}
-	
 `;
 
 export default function DefaultModal({ 

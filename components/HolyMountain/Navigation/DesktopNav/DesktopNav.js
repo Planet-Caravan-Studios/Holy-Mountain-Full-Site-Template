@@ -12,6 +12,7 @@ export default function DesktopNav({
   useEffect(() => {
     $(document).ready(function() {
       
+      //OPEN
       $("#DesktopNavButton").click(function(){
         //console.log("click");
         if($("#NavMenu").hasClass("active")){
@@ -23,6 +24,7 @@ export default function DesktopNav({
         }        
       });
 
+      //CLOSE
       $(".navMenu_close").click(function(){
         //console.log("click");
         if($("#NavMenu").hasClass("active")){
@@ -46,7 +48,7 @@ export default function DesktopNav({
                 <img
                  src="/images/hm-logo-small.png"
                  alt="Holy Mountain Logo"
-               />
+                />
               </a>
   	      
               <div className={styles.title}>
