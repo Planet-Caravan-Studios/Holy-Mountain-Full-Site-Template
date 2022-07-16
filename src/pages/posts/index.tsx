@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import Layout from "@components/NecroCult/Layout/Layout/Layout";
+import Layout from "@components/HolyMountain/Layout/Layout/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";

@@ -3,7 +3,7 @@ import Date from "./Date";
 import Link from "next/link";
 import { parseISO } from "date-fns";
 
-import BlogListing from "@components/HolyMountain/BlogListing/BlogListing";
+import BlogListing from "@components/HolyMountain/Blog/BlogListing/BlogListing";
 
 type Props = {
   post: PostContent;

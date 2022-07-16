@@ -185,6 +185,7 @@ export default function Index() {
                     contentLeft
                     fixedWidth="850px"
                     backgroundRight="url('/images/hm-hero-img.jpg')"
+                    backgroundLeft="#FAFAFA"
                     headingLeft="FixedWidth Component"
                     bodyLeft={[
                        /* <ul className='listFix'>

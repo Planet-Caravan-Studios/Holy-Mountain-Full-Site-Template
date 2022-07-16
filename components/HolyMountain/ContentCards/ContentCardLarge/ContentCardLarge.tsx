@@ -42,6 +42,7 @@ export default function ContentCardLarge({
 	children,
   classname,
   image,
+  imageAlt,
   backgroundImage,
   backgroundColor,
   backgroundPosition,

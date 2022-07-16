@@ -1,4 +1,4 @@
-import { AuthorContent } from "../lib/authors";
+import { AuthorContent } from "@src/lib/authors";
 
 type Props = {
   author: AuthorContent;
