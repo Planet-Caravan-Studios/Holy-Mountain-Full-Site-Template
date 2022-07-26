@@ -12,13 +12,12 @@ export default function PostItem({ post }: Props) {
   return (
     <BlogListing
     	postHeadline={post.title}
-      postSnippet={post.snippet}
+      /*postSnippet={post.snippet}*/
       postColumn={post.column}
     	postUrl={'/posts/' + post.slug}
     	postDate={parseISO(post.date)}
       postImage={post.image}
       postAlbumCredit={post.album_credit}
-
     />
   );
 }

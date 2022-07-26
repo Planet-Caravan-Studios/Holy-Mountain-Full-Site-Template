@@ -7,6 +7,7 @@ import styled from "styled-components";
 export default function BlogListing({ 
   //page vars
   postUrl,
+  postDate,
   postImage,
   postImageAlt,
   postAlbumCredit,
