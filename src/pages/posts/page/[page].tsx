@@ -1,11 +1,11 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Layout from "@components/HolyMountain/Layout/Layout/Layout";
-import BasicMeta from "@components/meta/BasicMeta";
-import OpenGraphMeta from "@components/meta/OpenGraphMeta";
-import TwitterCardMeta from "@components/meta/TwitterCardMeta";
-import PostList from "@components/PostList";
-import config from "@lib/config";
+import BasicMeta from "@components/TopLevel/meta/BasicMeta";
+import OpenGraphMeta from "@components/TopLevel/meta/OpenGraphMeta";
+import TwitterCardMeta from "@components/TopLevel/meta/TwitterCardMeta";
+import PostList from "@components/TopLevel/PostList";
+import config from "@src/lib/config";
 import { countPosts, listPostContent, PostContent } from "@src/lib/posts";
 import { listTags, TagContent } from "@src/lib/tags";
 
