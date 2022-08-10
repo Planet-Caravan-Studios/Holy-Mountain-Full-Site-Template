@@ -29,7 +29,7 @@ const Cell = styled.div`
 `;
 
 
-export default function BlogListing({ 
+export default function BlogDirectory({ 
   backgroundLeft,
   contentLeft,
   backgroundRight,

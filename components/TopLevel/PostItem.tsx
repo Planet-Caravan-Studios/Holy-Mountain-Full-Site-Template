@@ -8,7 +8,9 @@ import BlogListing from "@components/HolyMountain/Blog/BlogListing/BlogListing";
 type Props = {
   post: PostContent;
 };
-export default function PostItem({ post }: Props) {
+export default function PostItem({ 
+  post
+}: Props) {
   return (
     <BlogListing
     	postHeadline={post.title}
