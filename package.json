@@ -9,7 +9,7 @@
     "start": "next start",
     "export": "next build && next export -o ./dist",
     "test": "jest",
-    "init-setup": "npm ci && npm audit fix",
+    "init-setup": "npm i && npm audit fix",
     "nvm-set": "nvm use 14.15.3"
   },
   "dependencies": {
